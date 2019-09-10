@@ -12,6 +12,7 @@
 		04DE5D052327680A00662D48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DE5D032327680A00662D48 /* Main.storyboard */; };
 		04DE5D072327680B00662D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DE5D062327680B00662D48 /* Assets.xcassets */; };
 		04DE5D0A2327680B00662D48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04DE5D082327680B00662D48 /* LaunchScreen.storyboard */; };
+		04DE5D132327689600662D48 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DE5D122327689600662D48 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		04DE5D062327680B00662D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04DE5D092327680B00662D48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04DE5D0B2327680B00662D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DE5D122327689600662D48 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DE5D132327689600662D48 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				04DE5CFE2327680A00662D48 /* MyMap2 */,
 				04DE5CFD2327680A00662D48 /* Products */,
+				04DE5D112327689600662D48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				04DE5D0B2327680B00662D48 /* Info.plist */,
 			);
 			path = MyMap2;
+			sourceTree = "<group>";
+		};
+		04DE5D112327689600662D48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04DE5D122327689600662D48 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RUZ44CM29R;
 				INFOPLIST_FILE = MyMap2/Info.plist;
@@ -289,8 +302,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyMap2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.originalapp.MyMap2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RUZ44CM29R;
 				INFOPLIST_FILE = MyMap2/Info.plist;
@@ -307,8 +322,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MyMap2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.originalapp.MyMap2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
